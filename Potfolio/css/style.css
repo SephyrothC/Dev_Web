@@ -10,12 +10,156 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+:root {
+  --night: hsla(0, 0%, 8%, 1);
+  --seasalt: hsla(0, 0%, 97%, 1);
+  --battleship-gray: hsla(0, 0%, 61%, 1);
+  --shocking-pink: hsla(313, 78%, 56%, 1);
+  --chili-red: hsla(11, 69%, 50%, 1);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+#logo{
+  width: 50px;
+}
 
 html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+  font-family: 'Roboto', sans-serif;
 }
+
+body {
+  background-color: var(--seasalt);
+  color: var(--battleship-gray);
+}
+header {
+  background-color: var(--night);
+  color: var(--seasalt);
+  min-height: 100vh;
+  background-image: url("../img/ealis.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#bg_fade{
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(213, 236, 73, 0) 100%);
+  min-height: 100vh;
+  position: relative;
+}
+
+#logo{
+  width: 100px;
+  top: 50px;
+  left: 50px;
+  position: absolute;
+}
+
+#txt_P1{
+  position: absolute;
+  bottom: 150px;
+  left: 80px;
+}
+
+#txt_P1 h1{
+  font-size: 80px;
+  font-weight: bold;
+  color: var(--seasalt);
+  width: 100px;
+  line-height: 1;
+  margin-bottom: 25px;
+}
+
+#txt_P1 p{
+  font-size: 30px;
+  font-weight: bolder;
+  color: var(--battleship-gray);
+}
+
+
+section{
+  min-height: 300px;
+}
+section:nth-child(odd){
+  background-color: var(--seasalt);
+  color: var(--night);
+  padding: 100px 0;
+}
+section:nth-child(even) {
+  background-color: var(--night);
+  color: var(--seasalt);
+  padding: 100px 0;
+}
+
+#AboutMe{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 90%;
+}
+#AboutMe div{
+  width: 50%;
+}
+#photoAboutme {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+#photoAboutme img{
+  width: 50%;
+}
+
+#LearnMore{
+  padding: 10px;
+  background-color: var(--night);
+  color: var(--seasalt);
+  display: flex;
+  margin-top: 60px;
+}
+
+
+
+footer{
+  background-color: var(--battleship-gray);
+  color: var(--seasalt);
+  padding: 20px 0;
+  display: flex;
+}
+
+footer div {
+  display: flex;
+  width: 50%;
+}
+
+#social{
+  justify-content: right;
+}
+#social a{
+  margin: 0 10px;
+  width: 55px;
+  text-align: center;
+}
+#social a:hover img{
+  filter: invert(100%);
+}
+#social img {
+  width: 50px;
+  margin: 0 auto;
+  transition: all 0.5s;
+}
+
+#copyright{
+  margin-left: 15px;
+  text-align: left;
+  align-items: center;
+}
+
+
 
 /*
  * Remove text-shadow in selection highlight:
