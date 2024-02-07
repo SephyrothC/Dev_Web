@@ -7,3 +7,8 @@ ComputerSkill = [
     ["JavaScript", "30%"],
 
 ]
+
+Name = [
+    ["Adrian"],
+    ["Stephan"],
+]

@@ -65,13 +65,14 @@ header {
   left: 80px;
 }
 
-#txt_P1 h1{
+#name{
   font-size: 80px;
   font-weight: bold;
   color: var(--seasalt);
   width: 100px;
   line-height: 1;
   margin-bottom: 25px;
+  text-align: left;
 }
 
 #txt_P1 p{
@@ -85,13 +86,13 @@ section{
   min-height: 100vh;
 }
 section:nth-child(odd){
-  background-color: var(--seasalt);
-  color: var(--night);
+  background-color: var(--night);
+  color: var(--seasalt);
   padding: 100px 0;
 }
 section:nth-child(even) {
-  background-color: var(--night);
-  color: var(--seasalt);
+  background-color: var(--seasalt);
+  color: var(--night);
   padding: 100px 0;
 }
 
@@ -101,7 +102,7 @@ section:nth-child(even) {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  width: 90%;
+  width: 100%;
 }
 #AboutMe div{
   width: 50%;
@@ -126,16 +127,17 @@ section:nth-child(even) {
 
 #Bouton{
   padding: 10px;
-  background-color: var(--night);
-  color: var(--seasalt);
+  background-color: var(--seasalt);
+  color: var(--night);
   margin-top: 60px;
   cursor: pointer;
   transition: all 0.5s;
   
 }
 #Bouton:hover{
-  background-color: var(--seasalt);
-  color: var(--night);
+  border: var(--seasalt) 2px solid;
+  background-color: var(--night);
+  color: var(--seasalt);
 }
 
 #Level_Grade{
@@ -169,13 +171,13 @@ section:nth-child(even) {
 .bar{
   width: 70%;
   height: 20px;
-  background-color: var(--seasalt);
+  background-color: var(--battleship-gray);
   border-radius: 10px;
   padding: auto;
 }
 .bar div{
   height: 100%;
-  background-color: var(--battleship-gray);
+  background-color: var(--night);
   border-radius: 10px;
 }
 
