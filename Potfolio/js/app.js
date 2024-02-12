@@ -16,18 +16,14 @@ $(document).ready(function() {
             loop: true
           });
     
-    $(window).scroll(function () {
-        
+    $(window).scroll(function () {       
         for (i = 0; i < $('#Grade .Grade_bar').length; i++){
             // console.log(window.scrollY + " - " + $('#Grade .bar_fill:nth-child(' + i + ')').offset().top);
             if (window.pageYOffset >= $('#Grade #' + i + '-soSkill').offset().top - $(window).height() * 0.9){
                 console.log("ALARM")
                 $('#Grade #' + i + '-soSkill .bar .bar_fill').attr('class', 'bar_Anime');
-            }
-                
+            }       
         }
-                
-
     });
     
     
