@@ -219,6 +219,38 @@ section:nth-child(even) {
 
 
 
+.Project {
+  display: flex;
+  margin: 0 auto; 
+  padding: 15px 0 15px 0;
+}
+.Img_Pos {
+  scale: 80%;
+  width: 50%;
+}
+.Img_Project {
+  overflow: hidden;
+  margin: 0 auto;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+.Img_Project img{
+  width: 100%;
+  object-fit: cover;
+}
+.Txt_Project {
+  margin: 0 auto;
+  width: 70%;
+  display: flex;
+  align-items: center; 
+  padding-right: 50px;
+  text-align: justify;
+}
+
 
 footer{
   background-color: var(--battleship-gray);

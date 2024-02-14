@@ -26,6 +26,16 @@ $(document).ready(function() {
         }
     });
     
+
+    // Porject
+    for (var i = 0; i < Project.length; i++){
+        var detail = Project[i];
+        var img_link = detail[0];
+        var img_name = detail[1];
+        var text = detail[2];
+        $('#Project').html($('#Project').html() +  '<div class="Project"><div class = "Img_Pos"><div class = "Img_Project"><img src='+img_link+' alt='+img_name+'></div></div><p class="Txt_Project">'+text+'</p></div>');
+
+    }
     
     $('#Bouton').click(function() {
         $('#Me_Suite').toggleClass('active');
